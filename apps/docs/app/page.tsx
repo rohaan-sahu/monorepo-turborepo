@@ -1,6 +1,8 @@
 import Image, { type ImageProps } from "next/image";
 import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
+import PianoKeypad from "./components/PianoKeypad";
+import ChordKeyboard from "./components/ChordKeyboard";
 
 type Props = Omit<ImageProps, "src"> & {
   srcLight: string;
@@ -22,7 +24,9 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        Hello docs
+        Click the keys and check console
+        <ChordKeyboard/>
+        <PianoKeypad/>
       </main>
     </div>
   );

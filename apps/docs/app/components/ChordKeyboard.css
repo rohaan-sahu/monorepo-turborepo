@@ -1,0 +1,47 @@
+.chord-keyboard-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px; /* Use the same gap as the piano keypad for consistency */
+  background-color: #555;
+  border-radius: 12px;
+  padding: 10px; /* Use the same padding as the piano keypad */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.chord-key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Set to the same size as piano keys */
+  height: 50px; /* Set to the same size as piano keys */
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 14px; /* Use the same font size as piano keys */
+  border-radius: 8px; /* Use the same border radius as piano keys */
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease, background-color 0.1s ease;
+}
+
+.chord-key:active {
+  transform: scale(0.95);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific shades of grey for each chord type */
+.major {
+  background-color: #A9A9A9; /* A light grey */
+  color: #333; /* Dark text for contrast */
+}
+
+.minor {
+  background-color: #808080; /* A medium grey */
+  color: #fff;
+}
+
+.diminished {
+  background-color: #4F4F4F; /* A dark grey */
+  color: #fff;
+}
